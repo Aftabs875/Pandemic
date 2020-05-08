@@ -18,6 +18,8 @@
         android:layout_marginRight="99dp"
         android:layout_marginBottom="431dp"
         android:ems="10"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:background="@drawable/frame"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,6 +37,8 @@
         android:layout_marginRight="99dp"
         android:background="@drawable/frame"
         android:ems="10"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,12 +57,17 @@
         android:layout_marginRight="170dp"
         android:layout_marginBottom="209dp"
         android:background="@drawable/signin"
+        android:shadowColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:text="Sign In"/>
+
 
     <Button
         android:id="@+id/button2"
@@ -67,10 +76,15 @@
         android:background="@drawable/admin"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.202"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Admin"
+
+        />
 
     <Button
         android:id="@+id/button3"
@@ -78,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="273dp"
         android:layout_marginLeft="273dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="117dp"
@@ -86,8 +101,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintVertical_bias="0.173"
+        android:text="Vendor"/>
 
     <TextView
         android:id="@+id/textView"

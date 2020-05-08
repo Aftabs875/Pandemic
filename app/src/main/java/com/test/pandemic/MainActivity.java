@@ -41,13 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser mFirebaseUser=mFirebaseAuth.getCurrentUser();
                 if (mFirebaseUser!=null){
                     Toast.makeText(MainActivity.this,"Hasta lavista Baby",Toast.LENGTH_SHORT).show();
-                    Intent i=new Intent(MainActivity.this,HomeActivity.class);
+                    Intent i=new Intent(MainActivity.this,NewCustDas.class);
                     startActivity(i);
+                    finish();
                 }
-                else{
-                    Toast.makeText(MainActivity.this,"Please Try again!",Toast.LENGTH_SHORT).show();
-
-                }
+//                else{
+//                    Toast.makeText(MainActivity.this,"Please Try again!",Toast.LENGTH_SHORT).show();
+//
+//                }
 
             }
         };
@@ -75,10 +76,10 @@ public class MainActivity extends AppCompatActivity {
                             if (!task.isSuccessful()){
                                 Toast.makeText(MainActivity.this,"Login Error,please Login Again",Toast.LENGTH_SHORT).show();
                             }
-                            else{
-                                Intent intoHome=new Intent(MainActivity.this,HomeActivity.class);
-                                startActivity(intoHome);
-                            }
+//                            else{
+//                                Intent intoHome=new Intent(MainActivity.this,Dashcustomer.class);
+//                                startActivity(intoHome);
+//                            }
                         }
                     });
                 }
@@ -94,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intVendor=new Intent(MainActivity.this,Vendor.class);
                 startActivity(intVendor);
+                finish();
             }
         });
 
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intAdmin=new Intent(MainActivity.this,Admin.class);
                 startActivity(intAdmin);
+                finish();
             }
         });
 

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/backover">
+    android:background="@drawable/backover"
+    tools:context=".Vendor">
 
     <EditText
         android:id="@+id/editText"
@@ -17,8 +17,10 @@
         android:layout_marginEnd="99dp"
         android:layout_marginRight="99dp"
         android:layout_marginBottom="431dp"
-        android:ems="10"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:background="@drawable/frame"
+        android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +38,8 @@
         android:background="@drawable/frame"
         android:ems="10"
         android:inputType="textPassword"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +62,10 @@
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:text="Sign In"/>
 
     <Button
         android:id="@+id/button2"
@@ -67,10 +74,13 @@
         android:background="@drawable/user"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.115"
+        android:text="User"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"/>
 
     <Button
         android:id="@+id/button3"
@@ -88,7 +98,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:text="Admin"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"/>
 
     <TextView
         android:id="@+id/textView"
